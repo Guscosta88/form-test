@@ -6,25 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            background-color: #fdf1d6;
+
+        }
+
         form{
-            padding-top: 120px;
+            padding: 100px;
+            margin: 5% 25% 25% 25%;
             text-align: center;
             font-size: 30px;
+            width: 30%;
+            height: 50%;
+            background-color: #da723c;
+            /* outline: 1px solid black; */
+            border-radius: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            
         }
 
         input{
             width: 250px;
             height: 40px;
             font-size: 30px;
+            margin: 20px;
+        }
+
+        #male{
+            width: 20px;
+        }
+
+        #female{
+            width: 20px;
+            margin-left: 50px;
+            
+        }
+
+        #submit{
+            border-radius: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background-color: #c39e5c;
         }
 
     </style>
 </head>
 <body>
-    <form method="post" action="index.php">
-        Username : <input type="text" name="username"><br><br>
-        Password : <input type="password" name="password"><br><br>
-        <input type="submit" value="Submit">
+    <form method="post" action="connect.php">
+        User name  <input type="text" name="username"><br><br>
+        First name  <input type="text" name="firstname"><br><br>
+        Last name  <input type="text" name="lastname"><br><br>
+        sex<br>
+          <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+        Address  <input type="text" name="address"><br><br>
+        E-mail address  <input type="text" name="email"><br><br>
+        Phone number <input type="text" name="phone"><br><br>
+        Password  <input type="password" name="password"><br><br>
+        <input type="submit" id="submit" value="Submit">
     </form>
 </body>
 </html>
